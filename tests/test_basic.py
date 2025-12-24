@@ -1,7 +1,5 @@
-import pytest
-
-def test_valid_login():
+def test_valid():
     assert True
 
-def test_invalid_login():
+def test_invalid():
     assert False

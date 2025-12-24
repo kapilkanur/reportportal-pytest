@@ -1,14 +1,8 @@
-import logging
 import pytest
 
-logger = logging.getLogger(__name__)
-
-@pytest.mark.custom_marker
-def test_with_description():
+def test_with_description_doc_strings(rp_logger):
     """
-    This test checks the payment flow functionality.
-    It logs the start of the payment process and asserts that the process completes successfully.
-    :return:
+    This test checks if the description in the report portal is picked from doc strings.
     """
-    logger.info("Starting payment flow")
+    rp_logger.info("Starting the test to verify doc string description in report portal")
     assert True
